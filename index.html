@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Agrinho | Agronegócio e os ODS da ONU - Cards Interativos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Botão voltar ao topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar modo escuro/claro">
+            <i class="fas fa-moon"></i> Modo Escuro
+        </button>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="tech-badge">🌱 FUTURO SUSTENTÁVEL</div>
+            <h1 class="glow-text">Agronegócio 4.0</h1>
+            <p class="subtitle">Integrando tecnologia, regeneração e os <span class="highlight">17 Objetivos de Desenvolvimento Sustentável</span> da ONU</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-number" id="odsCounter">17</span><span>ODS</span></div>
+                <div class="stat"><span class="stat-number">2030</span><span>Meta Global</span></div>
+                <div class="stat"><span class="stat-number">+2B</span><span>Pessoas alimentadas</span></div>
+            </div>
+            <a href="#ods-grid" class="cta-button">Explorar impacto <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-bg-gradient"></div>
+    </header>
+
+    <main>
+        <!-- Introdução -->
+        <section class="intro section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">VISÃO 2030</span>
+                    <h2>O que são os <span class="gradient-text">ODS da ONU?</span></h2>
+                </div>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <p>Os <strong>Objetivos de Desenvolvimento Sustentável (ODS)</strong> são uma agenda global da Organização das Nações Unidas (ONU) adotada em 2015 para guiar países, empresas e sociedade civil rumo a um futuro mais justo, próspero e sustentável até <strong>2030</strong>.</p>
+                        <p>São <strong>17 metas interconectadas</strong> que abordam pobreza, desigualdade, meio ambiente, paz e prosperidade. O agronegócio é peça-chave para concretizar essa visão.</p>
+                        <div class="tech-card">
+                            <i class="fas fa-seedling"></i>
+                            <p><strong>Papel do Agronegócio:</strong> equilibrar a erradicação da fome (ODS 2) com a proteção de recursos naturais, migrando para práticas regenerativas e tecnológicas.</p>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="globe-placeholder">
+                            <i class="fas fa-globe-americas"></i>
+                            <div class="orbital-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid dos 17 ODS com Cards Flip -->
+        <section id="ods-grid" class="ods-section section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">IMPACTO DIRETO</span>
+                    <h2>Como o Agronegócio contribui para <span class="gradient-text">cada ODS</span></h2>
+                    <p class="section-subtitle">Clique ou passe o mouse sobre os cards para ver o relato detalhado</p>
+                </div>
+
+                <div class="ods-grid" id="odsGridContainer">
+                    <!-- Os cards flip serão gerados via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Importância da integração -->
+        <section class="importance-section section">
+            <div class="container">
+                <div class="importance-card">
+                    <h3>Qual a importância da integração dos ODS no agronegócio para um futuro sustentável?</h3>
+                    <p>Integrar os ODS ao agronegócio é vital para garantir a sobrevivência e a competitividade do setor. Essa estratégia transforma a produção em um modelo de regeneração, garantindo resiliência contra mudanças climáticas, acesso aos exigentes mercados globais e estabilidade social.</p>
+                    <p><strong>É o caminho para produzir alimentos de forma eficiente sem esgotar os recursos naturais, assegurando que o campo continue sendo um motor de desenvolvimento para as próximas gerações.</strong></p>
+                    <div class="tech-stats">
+                        <div class="tech-stat-item"><i class="fas fa-chart-line"></i> +34% produtividade sustentável</div>
+                        <div class="tech-stat-item"><i class="fas fa-leaf"></i> 5.2 Gt CO₂ sequestrado/ano</div>
+                        <div class="tech-stat-item"><i class="fas fa-tractor"></i> 15M empregos verdes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusão -->
+        <section class="conclusion-section section">
+            <div class="container">
+                <div class="conclusion-card glass-panel">
+                    <h2>Conclusão: <span class="gradient-text">Um novo paradigma</span></h2>
+                    <p>A relação entre os 17 ODS e o agronegócio representa uma mudança de paradigma necessária: o campo deixa de ser visto apenas como uma fonte de recursos para se tornar o <strong>pilar central da sustentabilidade global</strong>.</p>
+                    <p>Enquanto a ONU fornece o roteiro ético, o agronegócio atua como o motor que viabiliza a segurança alimentar e o desenvolvimento econômico. Quando integra as ODS, o setor protege solo, água e biodiversidade, garantindo sua própria longevidade e competitividade.</p>
+                    <div class="signature">Agrinho | Tecnologia e Futuro no Campo</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><i class="fas fa-leaf"></i> Agrinho ODS</div>
+                <p>Conteúdo 100% autoral baseado na agenda 2030 da ONU. Imagens: Freepik, Unsplash, Pixabay (licenças gratuitas para uso comercial e reprodução em sites).</p>
+                <div class="footer-tech"><i class="fas fa-code"></i> HTML5 | CSS3 | JavaScript | Cards 3D Flip</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
